@@ -5,16 +5,13 @@ import (
 )
 
 func MostrarValor(valor string) (int, string) {
-	var message string
 	valorNumerico, err := strconv.Atoi(valor)
-	if err == nil {
-		if valorNumerico > 100 {
-			message = "Es mayor a 100"
-		} else {
-			message = "Es menor a 100"
-		}
-	} else {
-		message = "Ocurrio un error"
+	if err != nil {
+		return 0, "Hubo un error " + err.Error()
 	}
-	return valorNumerico, message
+	if valorNumerico > 100 {
+		return valorNumerico, "Es mayor a 100"
+	} else {
+		return valorNumerico, "Es menor a 100"
+	}
 }

@@ -3,13 +3,13 @@ package main
 import (
 	"fmt"
 
-	"runtime"
+	"github.com/Fredev01/godesde0/ejercicios"
 )
 
 func main() {
 	/*estado, texto := variables.ConviertoaTexto(4019)
 	fmt.Println(estado)
-	fmt.Println(texto)*/
+	fmt.Println(texto)
 	if os := runtime.GOOS; os == "linux" || os == "OS X" {
 		fmt.Println("Esto no es Windows, es ", os)
 	} else {
@@ -24,5 +24,8 @@ func main() {
 	default:
 		fmt.Printf("%s \n", os)
 
-	}
+	}*/
+	numero, texto := ejercicios.MostrarValor("807")
+	fmt.Println(numero)
+	fmt.Println(texto)
 }

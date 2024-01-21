@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/Fredev01/godesde0/ejercicios"
+	"courses/godesde0/ejercicios"
 )
 
 func main() {

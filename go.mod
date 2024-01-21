@@ -1,3 +1,3 @@
-module github.com/Fredev01/godesde0
+module courses/godesde0
 
-go 1.19
+go 1.21.5
